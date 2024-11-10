@@ -1,475 +1,196 @@
-html {
-  scroll-padding-top: 30px;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Karan Kirpalani</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--NAVIGATION BAR FOR MOBILE VIEW-->
+    <div class="sidebar">
+      <nav class="h-tags">
+        <a href="#" onclick="hideSidebar()">X</a>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
 
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  border: 3px solid;
-  border-width: 0;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #f5af5f, #ee8c0d);
-  position: sticky;
-  width: 100%;
-  top: 10px;
-}
+    <!-- HEADER -->
+    <header>
+      <h1>Portfolio</h1>
+      <div class="h-tags">
+        <a class="active hide" href="#home">Home</a>
+        <a class="hide" href="#about">About</a>
+        <a class="hide" href="#services">Services</a>
+        <a class="hide" href="#Portfolio">Portfolio</a>
+        <a class="hide" href="#contact">Contact</a>
+        <a  href="#" onclick="showSidebar()" class="hide-m">MENU</a>
+      </div>
+    </header>
 
-.h-tags {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    <!--HOME SECTION -->
+    <section class="home container" id="home">
+      <div class="home-d">
+        <div class="h-details">
+          <h3>Hello, It's Me</h3>
+          <h1><span>Ajaykumar</span></h1>
+          <p>
+            I am a <span>Web Developer</span>. I have gained experience in
+            <span>Html</span>, <span>Css</span> and <span>Javascript</span>.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <button class="btn">Download Resume</button>
+        </div>
+        <img class="p-img" src="P-img.jpg" alt="" />
+      </div>
+    </section>
 
-header h1 {
-  font-size: 20px;
-  margin: 10px;
-}
+    <!--ABOUT SECTION -->
+    <section class="about container" id="about">
+      <img class="p-img" src="P-img.jpg" alt="" />
+      <div class="a-details">
+        <h1>About <span>Me</span></h1>
+        <h4>Aspiring Developer!</h4>
+        <p>
+          My name is Karan, I am a new web developer! I am in Grade 10
+           and I have gained some experience in Html, CSS and Javascript. I
+          have developed several "passion" Projects!
+        </p>
+        <button class="btn">Know More</button>
+      </div>
+    </section>
 
-.h-tags a {
-  text-decoration: none;
-  padding: 10px 30px;
-  color: white;
-}
-.h-tags a:hover {
-  color: black;
-}
+    <!-- SERVICES SECTION -->
+    <section class="services container" id="services">
+      <h1 class="heading">Our <span>Services</span></h1>
 
-.container {
-  width: 100%;
-  height: 100%;
-}
-section {
-  width: 100%;
-  height: 100%;
-}
+      <div class="s-boxs">
+        <div class="s-box">
+          <h1>Web Development</h1>
+          <ol>
+            <li>Building digital solutions, one pixel at a time.</li>
+            <li>Transforming ideas into interactive experiences.</li>
+            <li>Where code meets creativity.</li>
+            <li>Crafting websites that drive results.</li>
+            <li>Innovative web solutions for a connected world.</li>
+          </ol>
+          <button class="btn">Know More</button>
+        </div>
 
-/* HOME SECTION */
-.home {
-  width: 100%;
-  height: 100%;
-}
-.home-d {
-  display: flex;
-  justify-content: space-between;
-}
+        <div class="s-box">
+          <h1>Graphic Design</h1>
+          <ol>
+            <li>Visual storytelling</li>
+            <li>Where art meets strategy.</li>
+            <li>Elevating through design excellence.</li>
+            <li>Creating visual harmony.</li>
+            <li>Designing identities, one pixel at a time</li>
+          </ol>
+          <button class="btn">Know More</button>
+        </div>
 
-.h-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 50px;
-  margin-top: 100px;
-}
+        <div class="s-box">
+          <h1>Digital Marketing</h1>
+          <ol>
+            <li>Amplifying your online presence.</li>
+            <li>Driving results through digital innovation.</li>
+            <li>Connecting brands with their audience.</li>
+            <li>Unlocking your digital potential.</li>
+            <li>Transforming clicks into conversions.</li>
+          </ol>
+          <button class="btn">Know More</button>
+        </div>
+      </div>
+    </section>
 
-.h-details h3 {
-  margin: 5px;
-}
-.h-details h1 {
-  margin: 0;
-  font-size: 40px;
-}
-span {
-  color: orangered;
-}
-.h-details p {
-  font-size: 18px;
-  margin: 5px;
-}
+    <!-- PORTFOLIO SECTION -->
+    <section class="container Portfolio" id="Portfolio">
+      <h1 class="heading">Latest <span>Projects</span></h1>
 
-.btn {
-  width: 150px;
-  border: 3px solid;
-  border-width: 0;
-  padding: 10px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #f5af5f, #ee8c0d);
-  cursor: pointer;
-}
+      <div class="s-boxs">
+        <div class="s-box">
+          <h1>Ecom</h1>
+          <img src="ecom.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
 
-.btn:hover {
-  box-shadow: 5px 5px 5px rgba(243, 119, 3, 0.781);
-  transition-delay: 0.3s ease-in-out;
-}
+        <div class="s-box">
+          <h1>Coffee</h1>
+          <img src="coffee.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
 
-.social-icons {
-  display: flex;
-}
+        <div class="s-box">
+          <h1>D-Life</h1>
+          <img src="dlife.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
+        <div class="s-box">
+          <h1>Calculator</h1>
+          <img src="Calculator.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
+      </div>
 
-.social-icons a {
-  display: inline-flex;
-  padding: 5px;
-  border: 2px solid #222;
-  border-radius: 8px;
-  font-size: 14px;
-  color: orangered;
-  text-decoration: none;
-  margin: 0 8px;
-  margin-bottom: 10px;
-}
+      <div class="s-boxs">
+        <div class="s-box">
+          <h1>Portfolio</h1>
+          <img src="port.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
 
-.p-img {
-  width: 400px;
-  height: 450px;
-  margin: 30px;
-  margin-right: 60px;
-  border-radius: 18px;
-}
+        <div class="s-box">
+          <h1>Login</h1>
+          <img src="login.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
 
-/*ABOUT SECTION */
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.about {
-  width: 100%;
-  height: 100%;
-}
-.about .p-img {
-  margin: 50px;
-}
+        <div class="s-box">
+          <h1>Sports</h1>
+          <img src="sports.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
+        
+        <div class="s-box">
+          <h1>QR-Code</h1>
+          <img src="qr.png" alt="" />
+          <button class="btn">Demo</button>
+        </div>
+      </div>
+    </section>
 
-.a-details {
-  font-size: 20px;
-}
-.a-details p {
-  margin-bottom: 10px;
-  margin-right: 100px;
-}
-.a-details h4 {
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.a-details h1 {
-  margin-bottom: 0;
-  font-size: 35px;
-}
+    <!-- CONTACT SECTION -->
+    <section class="container contact" id="contact">
+      <div class="form-details">
+        <h1 class="heading">Contact <span>Me</span></h1>
 
-.heading {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        <form action="">
+          <input type="text" placeholder="Enter Your Name" required />
+          <input type="emial" placeholder="Enter Your Email" required />
+          <textarea placeholder="Message" id="" cols="4" rows="6"></textarea>
+          <input class="submit" type="submit" />
+        </form>
+      </div>
+    </section>
 
-.heading span {
-  margin-left: 5px;
-}
+    <!-- FOOTER SECTION -->
+    <footer>
+      <h4>Karan Kirpalani - All Right Reserved</h4>
+    </footer>
 
-/* SERVICES SECTION */
-.services {
-  width: 100%;
-  height: 550px;
-}
-.services .heading {
-  padding-top: 25px;
-}
-
-/* PORTFOLIO SECTION */
-.Portfolio {
-  width: 100%;
-  height: 100%;
-  margin-top: 50px;
-}
-.Portfolio .heading {
-  padding-top: 25px;
-}
-.s-boxs {
-  display: flex;
-  justify-content: space-between;
-  margin: 25px;
-  padding-bottom: 30px;
-}
-
-.s-box {
-  width: 350px;
-  height: 360px;
-  border: 2px solid #222;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.s-box h1 {
-  margin-bottom: 0;
-}
-.s-box button {
-  margin-top: 10px;
-}
-
-.s-box ol {
-  font-size: 18px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  height: 200px;
-  margin: 20px 20px;
-}
-
-.Portfolio .s-boxs .s-box {
-  margin-right: 10px;
-  width: 300px;
-  height: 300px;
-}
-
-.Portfolio .s-boxs .s-box img {
-  width: 200px;
-  height: 150px;
-  margin-top: 20px;
-}
-
-/* CONTACT SECTION */
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 25px;
-  width: 100%;
-  height: 100%;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-  height: 500px;
-}
-form input {
-  padding: 20px;
-  margin: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-}
-form textarea {
-  padding: 20px;
-  margin: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  border: 2px solid;
-  border-radius: 8px;
-}
-.submit {
-  width: 150px;
-  border: 3px solid;
-  border-width: 0;
-  padding: 10px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #f5af5f, #ee8c0d);
-  cursor: pointer;
-  margin-left: 270px;
-}
-
-/*FOOTER SECTION */
-footer {
-  background: #f5af5f;
-  padding: 5px;
-  border-radius: 8px;
-  width: 100%;
-  height: 50px;
-}
-footer h4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* MOBILE VIEW MENU-BAR*/
-.sidebar {
-  position: fixed;
-  top: 10px;
-  height: 100vh;
-  border: 3px solid;
-  border-width: 0;
-  border-radius: 8px;
-  background-color: rgba(250, 235, 215, 0.281);
-  backdrop-filter: blur(10px);
-  color: #222;
-  width: 20%;
-  z-index: 999;
-  display: none;
-  flex-direction: row;
-  right: 0;
-}
-
-.sidebar .h-tags a {
-  color: #222;
-  width: 100%;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-}
-.sidebar .h-tags a:hover {
-  color: orangered;
-}
-.sidebar .h-tags {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.hide-m {
-  display: none;
-}
-
-/* RESPONSIVE MOBILE VERSION */
-@media screen and (max-width: 450px) {
-  html{
-    width: 100%;
-  }
-  
-  header {
-    width: 400px;
-    margin: 0;
-    padding: 0;
-  }
-  .h-tags {
-    display: flex;
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 50%;
-    height: 100%;
-    position: fixed;
-  }
-
-  .container {
-    width: 100%;
-    height: 100%;
-  }
-  .heading {
-    width: 100%;
-    margin: 15px;
-  }
-  .home-d {
-    display: inline;
-    width: 100%;
-    font-size: 20px;
-    height: 200px;
-    margin-top: 0;
-  }
-  .h-details {
-    width: 100%;
-    margin-top: 50px;
-  }
-  .h-details p {
-    width: 200px;
-  }
-  .p-img {
-    height: 250px;
-    width: 300px;
-    margin-left: 50px;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 100%;
-  }
-  .a-details {
-    margin-left: 50px;
-  }
-  .a-details p {
-    margin-right: 40px;
-  }
-  .about .p-img {
-    margin-left: 110px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 250px;
-    width: 320px;
-  }
-  .s-boxs {
-    display: inline;
-    width: 100%;
-  }
-  .s-box {
-    margin: 10px;
-    margin-left: 20px;
-    width: 100%;
-  }
-  .services {
-    width: 400px;
-    height: 100%;
-  }
-  .services .heading {
-    margin: 10px;
-    width: 400px;
-  }
-  .services .s-boxs {
-    margin: 10px;
-    width: 400px;
-  }
-  .services .s-boxs .s-box {
-    margin-left: 20px;
-    width: 380px;
-  }
-  .Portfolio {
-    width: 400px;
-    height: 100%;
-  }
-  .Portfolio .heading {
-    margin-left: 20px;
-    width: 400px;
-    align-items: center;
-    justify-content: center;
-  }
-  .Portfolio .s-boxs .s-box {
-    width: 360px;
-    height: 100%;
-    margin-left: 20px;
-    padding: 0;
-  }
-  .Portfolio .s-boxs .s-box h1 {
-    margin-top: 10px;
-  }
-  .Portfolio .s-boxs .s-box img {
-    width: 280px;
-    margin: 10px;
-  }
-  .Portfolio .s-boxs .s-box .btn {
-    margin: 10px;
-  }
-  .contact {
-    width: 400px;
-    height: 100%;
-  }
-  .contact h1{
-    width: 400px;
-    display: flex;
-    align-items: center;
-  }
-  .form-details {
-    width: 400px;
-    height: 100%;
-  }
-  form {
-    width: 400px;
-    height: 100%;
-    margin: 10px;
-    margin-left:0;
-  }
-  .submit {
-    margin-left: 120px;
-  }
-  footer {
-    width: 400px;
-    height: 100%;
-  }
-  footer h4 {
-    display: flex;
-    align-items: center;
-  }
-}
-
-/* RESPONSIVE NAVIGATION BAR */
-
-@media screen and (max-width: 800px) {
-  .hide {
-    display: none;
-  }
-  .hide-m {
-    display: block;
-  }
-}
+    <!-- SCRIPT LINK -->
+    <script src="script.js"></script>
+  </body>
+</html>
