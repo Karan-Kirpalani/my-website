@@ -17,7 +17,7 @@ html,
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color: #00796b; /* Teal color */
+  background-color: #333;
   padding: 1rem 0;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .navbar .nav-links a:hover {
-  color: #ffab40; /* Amber color on hover */
+  color: #ff6347; /* Tomato color on hover */
 }
 
 /* Section styles */
@@ -72,16 +72,22 @@ body {
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: linear-gradient(to right, #ffffff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .about-section,
 .projects-section,
 .contact-section {
-  background-color: #e0f7fa; /* Light blue background */
+  background-color: #f9f9f9;
   border-radius: 8px;
-  padding: 2
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.projects-section li {
+  background: #e9ecef;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
