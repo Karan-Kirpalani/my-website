@@ -1,95 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Personal Site</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
 </head>
-
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-  <!-- Navbar -->
-  <header class="bg-blue-700 p-4 text-white shadow-lg">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold">Your Name</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#about" class="hover:underline">About</a></li>
-          <li><a href="#projects" class="hover:underline">Projects</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-16 mx-auto max-w-screen-xl">
-    <div class="container mx-auto px-8 text-center">
-      <h2 class="text-4xl font-bold mb-8">About Me</h2>
-      <p class="text-xl mb-4">
-        I'm a passionate student with a strong interest in medicine, science, and technology. I've participated in the
-        Canadian Wide Science Fair, where I presented a medicine-related project and developed my creativity and
-        biomedical skills. I also lead the "Chapter of Future Researchers Club" at my school to foster interest in
-        research among students.
-      </p>
-      <p class="text-xl mb-4">
-        Besides my research interests, I'm involved in the robotics team, FRC 8729, and I enjoy working on projects that
-        combine science with problem-solving. When I'm not studying, I love playing tennis, chess, and listening to
-        instrumental piano soundtracks.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-16 bg-gray-200">
-    <div class="container mx-auto px-8">
-      <h2 class="text-4xl font-bold text-center mb-8">Projects & Activities</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Research Club Project -->
-        <div class="bg-white rounded-lg shadow-lg p-6">
-          <h3 class="text-2xl font-bold mb-4">Future Researchers Club</h3>
-          <p>
-            I founded this club at Merivale High School to encourage students to explore research. We hold workshops on
-            paper reading, literature reviews, and hands-on research projects, preparing students for events like the
-            International Research Olympiad.
-          </p>
+<body>
+    <header class="navbar">
+        <div class="container flex justify-between items-center">
+            <div class="logo">My Portfolio</div>
+            <nav>
+                <ul class="nav-links flex">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Science Fair Project -->
-        <div class="bg-white rounded-lg shadow-lg p-6">
-          <h3 class="text-2xl font-bold mb-4">Medicine Project - Science Fair</h3>
-          <p>
-            I presented a biomedical project at the Canadian Wide Science Fair, showcasing my ability to conduct research
-            and apply creative thinking. This project allowed me to develop valuable skills in medical research and
-            problem-solving.
-          </p>
-        </div>
-        <!-- Robotics Team Project -->
-        <div class="bg-white rounded-lg shadow-lg p-6">
-          <h3 class="text-2xl font-bold mb-4">Robotics Team FRC 8729</h3>
-          <p>
-            As a team member of FRC 8729, I engage in designing and programming robots for competitions. It's a
-            fantastic opportunity to apply engineering principles and collaborate with others.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16">
-    <div class="container mx-auto px-8 text-center">
-      <h2 class="text-4xl font-bold mb-8">Contact Me</h2>
-      <p class="text-xl mb-4">Feel free to reach out if you're interested in collaborating or have questions about my projects.</p>
-      <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700" onclick="showContactInfo()">Show Contact Info</button>
-      <p id="contact-info" class="hidden mt-4">Email: karankirp@gmail.com</p>
-    </div>
-  </section>
+    <main class="container">
+        <section id="about" class="about-section section">
+            <h2 class="section-title text-4xl mb-8">About Me</h2>
+            <p class="text-lg">I am a web developer with a passion for creating beautiful and functional websites.</p>
+        </section>
 
-  <footer class="bg-blue-700 p-4 text-center text-white">
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-  </footer>
+        <section id="projects" class="projects-section section">
+            <h2 class="section-title text-4xl mb-8">Projects</h2>
+            <ul>
+                <li class="projects-section li">Project 1</li>
+                <li class="projects-section li">Project 2</li>
+                <li class="projects-section li">Project 3</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact-section section">
+            <h2 class="section-title text-4xl mb-8">Contact Me</h2>
+            <p class="text-lg">Feel free to reach out via <a href="mailto:example@example.com" class="text-gray-400 hover:underline">email</a>.</p>
+        </section>
+    </main>
+
+    <footer class="footer text-center p-4">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
