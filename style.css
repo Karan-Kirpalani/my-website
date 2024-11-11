@@ -1,1 +1,86 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.navbar nav {
+  display: inline-block;
+  float: right;
+}
+
+.navbar .nav-links {
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Section styles */
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Specific section styles */
+.about-section, .projects-section, .contact-section {
+  background-color: #f9f9f9;
+}
+
+.about-section p, .contact-section p {
+  font-size: 1.1rem;
+}
+
+.projects-section ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.projects-section li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-section a {
+  color: #333;
+  text-decoration: underline;
+}
 
