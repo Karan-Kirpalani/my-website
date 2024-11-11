@@ -1,11 +1,5 @@
-/* RESPONSIVE MOBILE VIEW NAVIGATION BAR*/
-
-function showSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "flex";
-}
-
-function hideSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "none";
-}
+// Simple form submission alert
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Thank you! Your message has been sent.");
+});
