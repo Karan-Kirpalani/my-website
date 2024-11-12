@@ -74,7 +74,7 @@ body {
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: linear-gradient(to right, #ffffff, #ffffff);
+  background: linear-gradient(to right, #2196f3, #21cbf3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -84,4 +84,10 @@ body {
 .contact-section {
   background-color: #e0f7fa; /* Light blue background */
   border-radius: 8px;
-  padding: 2
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.projects-section li {
+  background: #b2ebf2
