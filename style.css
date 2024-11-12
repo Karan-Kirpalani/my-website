@@ -10,15 +10,4 @@
 
 html,
 :host {
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  font-family: ui-sans-serif, system-ui, sans-serif;
-}
-
-body {
-  margin: 0;
-  background: linear-gradient(to right, #e0f7fa, #b2ebf2);
-}
-
-.container {
-  max-width: 120
+  line-height: 
