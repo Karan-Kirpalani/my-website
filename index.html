@@ -28,8 +28,19 @@
                     I’m <strong class="important">Karan K</strong>, a web developer with a passion for creating beautiful and functional websites. I specialize in building intuitive, responsive, and user-friendly web applications. My expertise includes HTML, CSS, JavaScript, and React, and I love combining creativity with technology to solve real-world problems. I'm constantly learning and improving my skills, whether it’s experimenting with new frameworks or collaborating with other developers. When I’m not coding, I enjoy exploring new tech trends, attending coding events, and contributing to open-source projects.
                 </p>
                 <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/Karan-Kirpalani/my-website/main/blob/images/WhatsApp%20Image%2021.jpeg" alt="Basketball">
-                    <img src="WhatsApp Image 22.jpeg alt="WhatsApp image 22" class="about-image" />
+                    <canvas id="myCanvas" width="300" height="200"></canvas>
+                    <img id="sourceImage" src="https://raw.githubusercontent.com/Karan-Kirpalani/my-website/main/images/WhatsApp%20Image%2021.jpeg" style="display:none;">
+
+                    <script>
+                        const canvas = document.getElementById('myCanvas');
+                        const ctx = canvas.getContext('2d');
+                        const img = document.getElementById('sourceImage');
+
+                        img.onload = function() {
+                            ctx.drawImage(img, 50, 50, 200, 200, 0, 0, 300, 200); // Crop and draw
+                        };
+                    </script>
+                    <img src="WhatsApp Image 22.jpeg" alt="WhatsApp image 22" class="about-image" />
                 </div>
             </div>
         </section>
@@ -66,8 +77,7 @@
     </main>
 
     <footer class="footer text-center p-4">
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p </footer>
 
     <script src="script.js"></script>
 </body>
