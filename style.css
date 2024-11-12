@@ -2,12 +2,116 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
-  border-color: #e5e7eb;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html,
-:host {
-  line-height: 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar {
+    background: #007BFF; /* Blue background */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #007BFF; /* Blue color for section titles */
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007BFF; /* Underline effect */
+    padding-bottom: 5px;
+}
+
+.content-box {
+    margin-top: 10px;
+}
+
+.important {
+    color: #007BFF; /* Highlight important text */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.about-image, .project-image {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section li:hover {
+    background: #e9ecef; /* Light gray on hover */
+}
+
+.footer {
+    background: #007BFF; /* Blue background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-blue-400 {
+    color: #007BFF; /* Blue color for links */
+}
+
+.text-blue-400:hover {
+    text-decoration: underline;
+}
