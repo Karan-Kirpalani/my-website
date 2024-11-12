@@ -5,6 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+        header, footer {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        header.dark-mode, footer.dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        a {
+            color: blue;
+            transition: color 0.5s;
+        }
+        a.dark-mode {
+            color: lightblue;
+        }
+        .section {
+            background-color: #f9f9f9;
+            transition: background-color 0.5s;
+        }
+        .section.dark-mode {
+            background-color: #444;
+        }
+        .box-shadow {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.5s;
+        }
+        .box-shadow.dark-mode {
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -45,7 +84,7 @@
                     <li class="projects-section li box-shadow">
                         <strong class="important">Project 2:</strong> Python Text Adventure Game
                         <p>Create a text-based adventure game where players navigate through different rooms, solve puzzles, and face challenges. This game will use Python's input() function to include multiple choices, decision branches, and a story-driven experience. At the end, there is a fun ASCII drawing!</p>
-                        <p><strong>Skills Covered:</strong> Functions, loops, conditionals, object-oriented programming (OOP), and basic file handling for saving game progress.</p>
+                        <p><strong>Skills Covered:</strong> Functions, loops, conditionals , object-oriented programming (OOP), and basic file handling for saving game progress.</p>
                         <img src="https://raw.githubusercontent.com/Karan-Kirpalani/my-website/main/images/pythongame.png" alt="Python Game" class="project-image" />
                     </li>
                 </ul>
@@ -58,7 +97,7 @@
                 <p>You can reach me through the following platforms:</p>
                 <p>
                     <a href="https://www.linkedin.com/in/karan-kirpalani-7a44b4330" class="text-blue-400 hover:underline">LinkedIn</a> | 
-                    <a href="https://github.com/Karan-Kirpalani/" class="text-blue-400 hover :underline">GitHub</a> | 
+                    <a href="https://github.com/Karan-Kirpalani/" class="text-blue-400 hover:underline">GitHub</a> | 
                     <a href="mailto:karanworldforever@gmail.com" class="text-blue-400 hover:underline">Email</a>
                 </p>
             </div>
@@ -70,25 +109,24 @@
     </footer>
 
     <script src="script.js"></script>
-<button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
 
-<style>
-  body {
-    background-color: white;
-    color: black;
-    transition: background-color 0.5s, color 0.5s;
-  }
-  body.dark-mode {
-    background-color: black;
-    color: white;
-  }
-</style>
-
-<script>
-  const toggleButton = document.getElementById('toggle-dark-mode');
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+            document.querySelector('footer').classList.toggle('dark-mode');
+            document.querySelectorAll('a').forEach(link => {
+                link.classList.toggle('dark-mode');
+            });
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.toggle('dark-mode');
+            });
+            document.querySelectorAll('.box-shadow').forEach(box => {
+                box.classList.toggle('dark-mode');
+            });
+        });
+    </script>
 </body>
 </html>
