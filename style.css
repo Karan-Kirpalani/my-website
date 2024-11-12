@@ -20,36 +20,60 @@ body {
     overflow: hidden;
 }
 
+/* Navbar Styles */
 .navbar {
-    background: #007BFF; /* Blue background */
-    color: #fff;
-    padding: 10px 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar .logo {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-links {
     list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
 }
 
 .nav-links li {
-    display: inline;
-    margin-left: 20px;
+    position: relative;
 }
 
 .nav-links a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #FFD700; /* Gold color on hover */
+    color: #ffdd57; /* Change color on hover */
 }
 
+.nav-links a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ffdd57; /* Underline color */
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px; /* Position the underline */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* Section Styles */
 .section {
     background: #ffffff; /* White background for sections */
     margin: 20px 0;
