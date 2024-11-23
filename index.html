@@ -6,42 +6,68 @@
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
     <style>
+        /* Base Styles */
         body {
             background-color: white;
             color: black;
             transition: background-color 0.5s, color 0.5s;
         }
+
         body.dark-mode {
-            background-color: black;
+            background-color: #121212; /* Dark background */
             color: white;
         }
+
         header, footer {
             transition: background-color 0.5s, color 0.5s;
         }
+
         header.dark-mode, footer.dark-mode {
-            background-color: #333;
+            background-color: #1e1e1e; /* Darker header/footer */
             color: white;
         }
+
         a {
             color: blue;
             transition: color 0.5s;
         }
+
         a.dark-mode {
-            color: lightblue;
+            color: lightblue; /* Lighter link color in dark mode */
         }
+
         .section {
-            background-color: #f9f9f9;
+            background-color: #f9f9f9; /* Light background for sections */
             transition: background-color 0.5s;
         }
+
         .section.dark-mode {
-            background-color: #444;
+            background-color: #2a2a2a; /* Dark background for sections */
         }
+
         .box-shadow {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: box-shadow 0.5s;
         }
+
         .box-shadow.dark-mode {
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Light shadow for dark mode */
+        }
+
+        h2.section-title {
+            color: #007BFF; /* Blue color for section titles */
+        }
+
+        h2.section-title.dark-mode {
+            color: #1e90ff; /* Lighter blue for dark mode */
+        }
+
+        .important {
+            color: #007BFF; /* Highlight important text */
+        }
+
+        .important.dark-mode {
+            color: #1e90ff; /* Lighter blue for dark mode */
         }
     </style>
 </head>
@@ -84,7 +110,7 @@
                     <li class="projects-section li box-shadow">
                         <strong class="important">Project 2:</strong> Python Text Adventure Game
                         <p>Create a text-based adventure game where players navigate through different rooms, solve puzzles, and face challenges. This game will use Python's input() function to include multiple choices, decision branches, and a story-driven experience. At the end, there is a fun ASCII drawing!</p>
-                        <p><strong>Skills Covered:</strong> Functions, loops, conditionals , object-oriented programming (OOP), and basic file handling for saving game progress.</p>
+                        <p><strong>Skills Covered:</strong> Functions, loops, conditionals, object-oriented programming (OOP), and basic file handling for saving game progress.</p>
                         <img src="https://raw.githubusercontent.com/Karan-Kirpalani/my-website/main/images/pythongame.png" alt="Python Game" class="project-image" />
                     </li>
                 </ul>
@@ -105,10 +131,9 @@
     </main>
 
     <footer class="footer text-center p-4">
-        <p>&copy; 2024-2025 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2024-2025 My Portfolio. Karan Kirpalani, All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
     <button id="toggle-dark-mode">Toggle Dark Mode</button>
 
     <script>
@@ -125,6 +150,12 @@
             });
             document.querySelectorAll('.box-shadow').forEach(box => {
                 box.classList.toggle('dark-mode');
+            });
+            document.querySelectorAll('.section-title').forEach(title => {
+                title.classList.toggle('dark-mode');
+            });
+            document.querySelectorAll('.important').forEach(importantText => {
+                importantText.classList.toggle('dark-mode');
             });
         });
     </script>
