@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio! This is a personal website showcasing my skills, projects, and contact information. The website is built using HTML, CSS, and JavaScript, with a focus on responsive design and user experience.
+Welcome to my portfolio! This is a personal website showcasing my skills, projects, and contact information. The website is built using HTML, CSS, and JavaScript, with a focus on responsive design and user experience. Access here: https://karan-kirpalani.netlify.app/#projects
 
 ## Table of Contents
 
