@@ -143,8 +143,8 @@ body {
     color: #007BFF; /* Blue color for links */
 }
 
-.text-blue-400:hover {
-    text-decoration: underline /* Underline on hover for blue text */
+.text -blue-400:hover {
+    text-decoration: underline; /* Underline on hover for blue text */
 }
 
 /* Base Styles for Boxes */
@@ -184,4 +184,10 @@ body.dark-mode .section {
 /* Dark Mode Footer Styles */
 body.dark-mode .footer {
     background: #1f1f1f; /* Dark background for footer */
+}
+
+/* Dark Mode Small Boxes Styles */
+body.dark-mode .content-box {
+    background-color: black; /* Black background for small boxes in dark mode */
+    border: 2px solid #ffffff; /* White border for small boxes */
 }
