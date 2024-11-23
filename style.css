@@ -122,6 +122,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: 2px solid #007BFF; /* Blue border for project items */
+    transition: background 0.5s; /* Smooth transition for background */
 }
 
 .projects-section li:hover {
@@ -143,37 +144,44 @@ body {
 }
 
 .text-blue-400:hover {
-    text-decoration: underline;
+    text-decoration: underline /* Underline on hover for blue text */
+}
+
+/* Base Styles for Boxes */
+.box {
+    background-color: white; /* Default background for light mode */
+    border: 2px solid #007BFF; /* Default border color */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background-color 0.5s, border-color 0.5s; /* Smooth transition */
 }
 
 /* Dark Mode Styles */
+body.dark-mode .box {
+    background-color: black; /* Black background for dark mode */
+    border: 2px solid #ffffff; /* White border for contrast */
+}
+
+/* Dark Mode Body Styles */
 body.dark-mode {
-    background: linear-gradient(to right, # 1a1a1a, #333); /* Dark gray gradient */
-    color: white; /* White text for dark mode */
+    background: #121212; /* Dark background for body */
+    color: #e0e0e0; /* Light text for dark mode */
+    transition: background 0.5s, color 0.5s; /* Smooth transition for background and text color */
 }
 
-.navbar.dark-mode {
-    background: linear-gradient(135deg, #4a4a4a 0%, #1a1a1a 100%); /* Dark gradient background */
+/* Dark Mode Navbar Styles */
+body.dark-mode .navbar {
+    background: #1f1f1f; /* Dark background for navbar */
 }
 
-.section.dark-mode {
-    background: #2a2a2a; /* Dark background for sections */
-    border: 2px solid #ffdd57; /* Yellow border */
+/* Dark Mode Section Styles */
+body.dark-mode .section {
+    background: #1e1e1e; /* Dark background for sections */
+    border: 2px solid #444; /* Darker border for sections */
 }
 
-.section-title.dark-mode {
-    color: #ffdd57; /* Yellow color for section titles */
-}
-
-.projects-section li.dark-mode {
-    background: #3a3a3a; /* Dark gray background for project items */
-    border: 2px solid #ffdd57; /* Yellow border for project items */
-}
-
-.footer.dark-mode {
-    background: #1a1a1a; /* Dark background */
-}
-
-.text-blue-400.dark-mode {
-    color: #ffdd57; /* Yellow color for links in dark mode */
+/* Dark Mode Footer Styles */
+body.dark-mode .footer {
+    background: #1f1f1f; /* Dark background for footer */
 }
